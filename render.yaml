@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: finance-system
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    plan: free
+```
+
+**Step 3 — render.com pe ja:**
+1. Login kar
+2. "New Web Service" click kar
+3. GitHub repo connect kar
+4. Deploy!
+
+**Step 4 — Live link milegi jaise:**
+```
+https://finance-system.onrender.com/api/transactions/
